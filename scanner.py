@@ -278,12 +278,12 @@ def driver(f,line):
                 return tk, line              
         else:
             unit = datum
-            if unit in specials and symbols.has_key(unit) == False:
-                print "SCANNER ERROR: Illegal keyword character '%s' on line %d" % (datum,line) 
-                tk.identity = token.token_ids.token_names[36]
-                tk.instance = unit
-                tk.location = line
-                return tk, line
+            # if unit in specials and symbols.has_key(unit) == False:
+            #     print "SCANNER ERROR: Illegal keyword character '%s' on line %d" % (datum,line) 
+            #     tk.identity = token.token_ids.token_names[36]
+            #     tk.instance = unit
+            #     tk.location = line
+            #     return tk, line
             if unit.isspace() == False:
                 literal += unit
             if len(literal) > 7:
