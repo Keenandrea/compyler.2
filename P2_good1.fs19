@@ -3,9 +3,7 @@ start
     var x2 : 2
     in x1 ;
     x2 < < x1 + x2 / 3 ;
-    out x1
+    out x1 + x2 ;
     cond ( ( x1 < x2 ) )
-    start   
-        out x1 + x2 ;
-    stop ;
+    	out [ x1 + x2 ] ;
 stop

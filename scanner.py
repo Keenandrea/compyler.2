@@ -75,7 +75,7 @@ final_states = {
 keywords = {
     'start'   : 'START_tk',
     'stop'    : 'STOP_tk',
-    'iter'    : 'ITER_tk',
+    'iterate'    : 'ITER_tk',
     'void'    : 'VOID_tk',
     'var'     : 'VAR_tk',
     'return'  : 'RETURN_tk',

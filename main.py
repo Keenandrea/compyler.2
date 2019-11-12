@@ -3,6 +3,7 @@ import os
 import errno
 import string
 import parsing
+import treetest
 
 # function checks file
 # for existance, for r
@@ -69,11 +70,11 @@ def main():
 				sys.exit(1) 				
 		filename = validate_file(str(cin))
 		datum = parsing.parser(filename)
-		parsing.printing(datum)
+		treetest.printing(datum, 0)
 	if len(sys.argv) == 2:
 		filename = validate_file(str(sys.argv[1]))
 		datum = parsing.parser(filename)
-		parsing.printing(datum)
+		treetest.printing(datum, 0)
 
 # our program's entry point		
 if __name__ == "__main__":

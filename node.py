@@ -2,22 +2,25 @@ import token
 from collections import deque
 
 class Node(object):
-    def __init__(self, label = "", depth = None, child1 = None, child2 = None, child3 = None, token1 = token.Token(), token2 = token.Token()):
+    def __init__(self, label = "", depth = None, child1 = None, child2 = None, child3 = None, child4 = None, token1 = token.Token(), token2 = token.Token(), token3 = token.Token(), token4 = token.Token()):
         self.label = label
         self.depth = depth
         self.child1 = child1
         self.child2 = child2
         self.child3 = child3
+        self.child4 = child4
         self.token1 = token1
         self.token2 = token2
+        self.token3 = token3
+        self.token4 = token4
         self.child_list = [] 
         self.token_list = [] 
 
-    def push_child1(self, child1):
-        self.child_list.append(child1)
+    # def push_child1(self, child1):
+    #     self.child_list.append(child1)
 
-    def push_token(self, tok):
-        self._token_list.append(tok)
+    # def push_token(self, tok):
+    #     self._token_list.append(tok)
 
  
     # @property
